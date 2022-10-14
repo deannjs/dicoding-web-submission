@@ -1,0 +1,183 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: #fafafa;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.me {
+    width: 90px;
+    border-radius: 125px;
+}
+
+.header .top h1 {
+    font-weight: 500;
+}
+
+.header {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    padding: 25px 0;
+}
+
+.nav .active {
+    font-weight: 600;
+}
+
+.main {
+    padding: 20px 300px 200px;
+}
+
+.main {
+    display: flex;
+    gap: 50px;
+}
+
+.article {
+    width: 600px;
+    padding: 26px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.article-body {
+    display: flex;
+    gap: 20px;
+}
+
+.article-img {
+    width: 200px;
+    align-self: center;
+}
+
+.article-date {
+    color: var(--subtitle);
+}
+
+.article-link {
+    align-self: flex-end;
+}
+
+.article-link button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.article-link button:hover {
+    cursor: pointer;
+}
+
+.aside {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.subscribe-container {
+    width: 100%;
+    background-color: white;
+    padding: 25px 35px;
+    display: flex;
+}
+
+.subscribe-btn {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 20px 0;
+    font-size: var(--font-s);
+    font-weight: 600;
+}
+
+.popular {
+    padding: 20px;
+    background-color: white;
+}
+
+.suggestion-container {
+    margin: 20px 0;
+}
+
+.suggestion-img {
+    max-height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.suggestion-title {
+    margin: 5px 0;
+}
+
+.footer {
+    display: flex;
+    height: 80px;
+    background-color: #e6e6e6;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-link {
+    display: flex;
+    font-weight: 600;
+    color: #7B7B7B;
+}
+
+/* Big Screen */
+@media only screen and (max-width: 1200px) {
+    .main {
+        padding: 20px 50px 25px;
+        justify-content: center;
+    }
+
+    .aside {
+        display: none;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 576px) {
+
+    .article {
+        width: 400px;
+    }
+
+    .article-body {
+        flex-direction: column;
+    }
+
+    .article-link {
+        margin-top: 10px;
+    }
+}
